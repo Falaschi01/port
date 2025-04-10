@@ -1,0 +1,171 @@
+.about-me {
+    background-color: #def2f5;
+}
+.about-me .max-width{
+    transform: translateX(-300px); 
+    transition: transform 2s ease-out, opacity 1s ease-out;
+    opacity: 0;
+}
+.max-width.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.about-me h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: rgb(19, 19, 31);
+}
+.about-me .content{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    justify-content: space-between;
+}
+.about-me figure img {
+    max-width: 30rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.about-me .content div {
+    width: 50%;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+.about-me div h3 {
+    font-size: 1.4rem;
+    animation: typingg 4s steps(51) forwards, blinkingg 0.7s infinite step-end;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.about-me div p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}   
+.about-me div .color-blue {
+    color:  rgb(40, 148, 236);
+}
+.about-me div .color-red{
+    color: rgb(255, 0, 0);
+    border-bottom: 0.1rem solid rgb(255, 0, 0);
+} 
+@keyframes typingg {
+    from{
+        width: 0;
+    }
+    to {
+        width: 51ch;
+      }
+}
+@keyframes blinkingg {
+    0%, 100% {
+      border-color: rgb(40, 148, 236);
+    }
+    50% {
+      border-color: transparent;
+    }
+}
+@media screen and (min-width: 500px)  and (max-width: 599px) {
+    .about-me .max-width{
+        transform: translateX(-50px); 
+    }
+    .about-me h2 {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .about-me .content{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .about-me figure img {
+        max-width: 18rem;
+        margin-top: 1rem;
+    }
+    .about-me .content div {
+        width: 100%;
+        line-height: 1.3rem;
+        text-align: justify;
+    }
+    .about-me div h3 {
+        font-size: 1.1rem;
+        animation: none;
+        white-space: wrap;
+    }
+    .about-me div p {
+        font-size: 1rem;
+    }   
+}
+@media screen and (min-width: 400px)  and (max-width: 499px) {
+    .about-me .max-width{
+        transform: translateX(-50px); 
+    }
+    .about-me h2 {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .about-me .content{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .about-me figure img {
+        max-width: 18rem;
+        margin-top: 1rem;
+    }
+    .about-me .content div {
+        width: 100%;
+        line-height: 1.3rem;
+        text-align: justify;
+    }
+    .about-me div h3 {
+        font-size: 1.1rem;
+        animation: none;
+        white-space: wrap;
+    }
+    .about-me div p {
+        font-size: 1rem;
+    }   
+}
+
+@media screen and (min-width: 300px)  and (max-width: 399px) {
+    .about-me .max-width {
+        transform: translateX(-50px); 
+    }
+    .about-me h2 {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .about-me .content{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .about-me figure img {
+        max-width: 18rem;
+        margin-top: 1rem;
+    }
+    .about-me .content div {
+        width: 100%;
+        line-height: 1.3rem;
+        text-align: justify;
+    }
+    .about-me div h3 {
+        font-size: 1rem;
+        animation: none;
+        white-space: wrap;
+        display: none;
+    }
+    .about-me div p {
+        font-size: 0.9rem;
+    }   
+}
+
+
+
+
+
+
+
+
+

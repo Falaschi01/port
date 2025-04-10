@@ -1,0 +1,159 @@
+.contact {
+    height: 50vh;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.contact .max-width {
+    background-color: rgb(33, 33, 33);
+    box-shadow: 0 0 1rem 0.4rem rgba(33, 33, 33, 0.4);
+    min-width: 40%;
+    padding: 1rem;
+    border-radius: 1rem;
+    transform: translateX(300px); 
+    transition: transform 2s ease-out, opacity 1s ease-out;
+    opacity: 0;
+}
+.max-width.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.contact h2 {
+    color: rgb(40, 148, 236);
+    font-size: 4rem;
+    text-align: center;
+}
+.contact .content-contact {
+    display: flex;
+    justify-content: space-around;
+}
+.content-contact .side-left {
+    margin-top: 1rem;
+    line-height: 1.7rem;
+}
+.side-left h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+.side-left p{
+    color: rgb(40, 148, 236);
+}
+.side-left a {
+    color:rgb(40, 148, 236);
+}
+.side-left h4 {
+    color: #fff;
+    font-size: 1.3rem;
+}
+.side-left ul {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+}
+.side-left ul li a {
+    color: #4d555a;
+    transition: 0.5s ease;
+    display: inline-block;
+}
+.side-left ul li .twitter:hover {
+    color: rgb(40, 148, 236);
+    transform: scale(1.5);
+}
+.side-left ul li .facebook:hover {
+    color: rgb(0, 12, 179);
+    transform: scale(1.5);
+}
+.side-left ul li .google:hover {
+    color:  #f95f39;
+    transform: scale(1.5);
+}
+.side-left ul li .git-hub:hover {
+    color: #949494;
+    transform: scale(1.5);
+}
+.content-contact  .side-right h3{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}   
+.side-right a{
+    padding: 1rem 3rem;
+    border: 0.1rem solid rgb(40, 148, 236);
+    display: inline-block;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.side-right a:hover{
+    border: 0.1rem solid #fff;
+    background-color: rgb(40, 148, 236);
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 400px)  and (max-width: 500px) {
+    .contact .max-width {
+        min-width: 85%;
+        transform: translateX(0); 
+    }
+    .contact h2 {
+        font-size: 2rem;
+    }
+    .content-contact .side-left {
+        margin-top: 0.5rem;
+    }
+    .side-left h3 {
+        font-size: 1rem;
+    }
+    .side-left p{
+        font-size: 0.7rem;
+    }
+    .side-left h4 {
+        font-size: 0.8rem;
+    }
+    .side-left ul {
+        gap: 1rem;
+    }
+    .content-contact  .side-right h3{
+        font-size: 0.7rem;
+    }   
+    .side-right a{
+        padding: 0.3rem 0.3rem;
+        margin-top: 0.5rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 300px)  and (max-width: 399px) {
+    .contact .max-width {
+        min-width: 85%;
+        transform: translateX(0); 
+    }
+    .contact h2 {
+        font-size: 2rem;
+    }
+    .content-contact .side-left {
+        margin-top: 0.5rem;
+    }
+    .side-left h3 {
+        font-size: 1rem;
+    }
+    .side-left p{
+        font-size: 0.7rem;
+    }
+    .side-left h4 {
+        font-size: 0.8rem;
+    }
+    .side-left ul {
+        gap: 1rem;
+    }
+    .content-contact  .side-right h3{
+        font-size: 0.7rem;
+    }   
+    .side-right a{
+        padding: 0.3rem 0.3rem;
+        margin-top: 0.5rem;
+        font-size: 0.6rem;
+    }
+}
+

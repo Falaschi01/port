@@ -1,0 +1,94 @@
+.skills {
+    min-height: 30vh;
+}
+.skills .max-width {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: transform 3s ease-out, opacity 1s ease-out;
+}
+.max-width.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.skills h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(40, 148, 236);
+    margin-top: 2rem;
+}
+.skills .cards-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    place-items: center;
+}
+.cards-skills .box-skills {
+    max-width: 10rem;
+    min-height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-top-left-radius: 30%;
+    background-color: rgb(33, 33, 33);
+    box-shadow: 0 0 1rem 0.4rem rgba(33, 33, 33, 0.4);
+    position: relative;
+    transition: 0.3s ease;
+}
+.cards-skills .box-skills:hover {
+    transform: scale(1.1);
+}
+.box-skills::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-image: linear-gradient(90deg, rgb(40, 148, 236), rgb(150, 43, 238));
+}
+.box-skills p{
+    font-size: 1.3rem;
+    color: rgb(40, 148, 236);
+}
+.box-skills img {
+    max-width: 35%;
+}
+@media screen and (min-width: 400px)  and (max-width: 500px)  {
+    .skills {
+        min-height: 30vh;
+    }
+    .skills .max-width {
+        transform: translateX(50px);
+    }
+    .skills h2 {
+    font-size: 2rem;
+    }
+    .cards-skills .box-skills {
+        max-width: 5rem;
+        min-height: 6rem;
+    }
+    .box-skills p{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (min-width: 300px)  and (max-width: 399px)  {
+    .skills .max-width {
+        transform: translateX(50px); 
+    }
+    .skills {
+        min-height: 30vh;
+    }
+    .skills h2 {
+    font-size: 2rem;
+    }
+    .cards-skills .box-skills {
+        max-width: 4rem;
+        min-height: 5rem;
+    }
+    .box-skills p{
+        font-size: 0.6rem;
+    }
+}
+

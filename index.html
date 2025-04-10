@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Rafael Falaschi</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--Menu Hamburguer-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+
+<body>
+    <header>
+        <section class="nav-content">
+            <div class="max-width">
+                <nav>
+                    <span class="material-symbols-outlined" onclick="menuclick()" id="menu-btn">
+                        menu
+                    </span>
+
+                    <a href="#">
+                        <h1>Port<span>fólio</span></h1>
+                    </a>
+
+                    <ul id="menu">
+                        <li><a href="#inicio">inicio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+
+                    <input type="checkbox" id="colorToggle" hidden>
+                    <label for="colorToggle" class="color-switch">
+                        <span class="color-ball"></span>
+                    </label>
+                </nav>
+            </div>
+        </section>
+    </header> <!--header-->
+
+    <main>
+        <section class="section-hero" id="inicio">
+            <div id="blur-overlay"></div>
+            <div class="max-width">
+
+                <figure>
+                    <img src="/Assets/foto perfil/Captura de tela 2025-04-05 005327.png" alt="Rafael Falaschi">
+                </figure>
+
+                <h2>
+                    Olá, me chamo <span>Rafael Falaschi</span>
+                </h2>
+
+                <p>Desenvolvedor <span>Front-end</span></p>
+
+                <div>
+                    <a href="/Assets/curriculo/RAFAEL FALASCHI.pdf" download="Curriculo_Rafael_Falaschi.pdf">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="mailto:rafinhabraga2324@gmail.com">
+                        <i class="fas fa-envelope"></i> Entrar em contato
+                    </a>
+                </div>
+            </div>
+        </section> <!--Apresentação-->
+
+        <section class="about-me" id="sobre">
+            <div class="max-width hidden">
+                <h2>Um pouco sobre mim! </h2>
+
+                <section class="content">
+                    <figure>
+                        <img src="/Assets/foto perfil/Captura de tela 2025-04-05 005327.png" alt="Rafael Falaschi">
+                    </figure>
+
+                    <div>
+                        <h3>
+                            Me chamo Rafael Falaschi e sou <span class="color-blue">Desenvolvedor Front-end.</span>
+                        </h3>
+
+                        <p>
+                            Atualmente curso Análise e Desenvolvimento de Sistemas na
+                            <a href="https://www.unipar.br/"><span class="color-red">Unipar - Universidade
+                                    Paranaense</span></a>, onde venho ampliando meus
+                            conhecimentos em programação e desenvolvimento web.
+                        </p>
+
+                        <p>
+                            Tenho paixão por tecnologia e estou sempre em busca de novos aprendizados que me ajudem a
+                            evoluir como desenvolvedor.
+                            Meu foco é criar interfaces modernas, acessíveis e funcionais, buscando constantemente
+                            melhorar minhas habilidades técnicas e colaborar em projetos que proporcionem impacto
+                            positivo.
+                        </p>
+
+                        <p>
+                            Estou comprometido com meu crescimento profissional e aberto a oportunidades que me desafiem
+                            a aprender cada vez mais, contribuindo com dedicação e proatividade em cada etapa do
+                            desenvolvimento.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section> <!--Sobre mim-->
+
+        <section class="skills" id="habilidades">
+            <div class="max-width hidden">
+                <h2>Habilidades</h2>
+
+                <ul class="cards-skills">
+                    <li class="box-skills">
+                        <p>HTML5</p>
+                        <img src="/Assets/linguagens de programacao/html5.png" alt="html5">
+                    </li>
+
+                    <li class="box-skills">
+                        <p>CSS3</p>
+                        <img src="/Assets/linguagens de programacao/css-3.png" alt="css3">
+                    </li>
+
+                    <li class="box-skills">
+                        <p>JAVASCRIPT</p>
+                        <img src="/Assets/linguagens de programacao/js.png" alt="javascript">
+                    </li>
+                </ul>
+            </div>
+        </section> <!--Minhas habilidades-->
+
+        <section class="projects" id="projetos">
+            <div class="max-width hidden">
+                <h2>Projetos</h2>
+
+
+                <section class="carousel-content">
+                    <div class="carousel-track">
+
+                        <div class="slide">
+                            <figure class="image-project">
+                                <img src="/Assets/projetos/site arquitetura.png" alt="projeto arquitetura">
+                            </figure>
+
+                            <article>
+                                <h3>Portfólio desenvolvido para arquitetura.</h3>
+                                <p>Construi o site por completo atráves do figma pedido pelo cliente.</p>
+                                <a href="#">Saiba mais</a>
+
+                                <ul class="language-produced">
+                                    <li>
+                                        <p>HTML5</p>
+                                        <img src="/Assets/linguagens de programacao/html-origi (2).png" alt="html5">
+                                    </li>
+
+                                    <li>
+                                        <p>CSS3</p>
+                                        <img src="/Assets/linguagens de programacao/css-origi.png" alt="css3">
+                                    </li>
+                                </ul>
+                            </article>
+
+
+                        </div>
+
+                        <div class="slide">
+                            <figure class="image-project">
+                                <img src="/Assets/projetos/site arquitetura.png" alt="projeto arquitetura">
+                            </figure>
+
+                            <article>
+                                <h3>Portfólio desenvolvido para arquitetura.</h3>
+                                <p>Construi o site por completo atráves do figma pedido pelo cliente.</p>
+                                <a href="#">Saiba mais</a>
+
+                                <ul class="language-produced">
+                                    <li>
+                                        <p>HTML5</p>
+                                        <img src="/Assets/linguagens de programacao/html-origi (2).png" alt="html5">
+                                    </li>
+
+                                    <li>
+                                        <p>CSS3</p>
+                                        <img src="/Assets/linguagens de programacao/css-origi.png" alt="css3">
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <div class="slide">
+                            <figure class="image-project">
+                                <img src="/Assets/projetos/site arquitetura.png" alt="projeto arquitetura">
+                            </figure>
+
+                            <article>
+                                <h3>Portfólio desenvolvido para arquitetura.</h3>
+                                <p>Construi o site por completo atráves do figma pedido pelo cliente.</p>
+                                <a href="#">Saiba mais</a>
+
+                                <ul class="language-produced">
+                                    <li>
+                                        <p>HTML5</p>
+                                        <img src="/Assets/linguagens de programacao/html-origi (2).png" alt="html5">
+                                    </li>
+
+                                    <li>
+                                        <p>CSS3</p>
+                                        <img src="/Assets/linguagens de programacao/css-origi.png" alt="css3">
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <i class="fas fa-chevron-left" id="arrow-left"></i>
+                    <i class="fas fa-chevron-right" id="arrow-right"></i>
+                </section>
+            </div>
+        </section> <!--Meus projetos-->
+
+        <section class="contact" id="contatos">
+            <div class="max-width hidden">
+                <h2>Contatos</h2>
+
+                <section class="content-contact">
+                    <div class="side-left">
+                        <h3>Endereço;</h3>
+
+                        <address>
+                            <p>
+                                <i class="fa-solid fa-location-dot" style="color: #f95f39;"></i>
+                                <a href="">Umuarama-pr</a>
+                            </p>
+                        </address>
+
+                        <address>
+                            <p>
+                                <i class="fa-sharp fa-solid fa-phone-volume" style="color: #f95f39;"></i>
+                                <a href="">(44) 99703-2921</a>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-envelope" style="color: #f95f39;"></i>
+                                <a href="#">rafaelfalaschi15@gmail.com</a>
+                            </p>
+                        </address>
+
+
+                        <h4>Siga-me</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="git-hub"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-right">
+                        <h3>Entre em contato comigo!</h3>
+                        <a href="#">Enviar via Whatssap</a>
+                    </div>
+                </section>
+            </div>
+        </section> <!--Contato-->
+    </main>
+
+    <footer>
+        <section class="footer">
+            <p>Copyright © 2025 <a href="#inicio">Rafael Falaschi</a>. Todos os direitos reservados.</p>
+        </section> <!--Rodapé-->
+    </footer>
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
