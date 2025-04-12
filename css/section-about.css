@@ -43,6 +43,33 @@
     font-size: 1.2rem;
     margin-top: 1rem;
 }   
+.about-me ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+.about-me ul a {
+    padding: 0.5rem 3rem;
+    color: #fff;
+    border-radius: 0.7rem;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+.about-me ul a:hover{
+    transform: scale(1.03);
+}
+.about-me ul .whatssap {
+    background-color: #2ec90f;
+}
+.about-me ul .gmail {
+    background-color: rgba(172, 4, 4, 0.89);
+}
+.about-me ul .git-hub{
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+
 .about-me div .color-blue {
     color:  rgb(40, 148, 236);
 }
@@ -66,9 +93,10 @@
       border-color: transparent;
     }
 }
-@media screen and (min-width: 500px)  and (max-width: 599px) {
+
+@media screen and (min-width: 400px)  and (max-width: 599px) {
     .about-me .max-width{
-        transform: translateX(-50px); 
+        transform: translateX(-30px); 
     }
     .about-me h2 {
         font-size: 1.5rem;
@@ -95,43 +123,20 @@
     }
     .about-me div p {
         font-size: 1rem;
-    }   
-}
-@media screen and (min-width: 400px)  and (max-width: 499px) {
-    .about-me .max-width{
-        transform: translateX(-50px); 
-    }
-    .about-me h2 {
-        font-size: 1.5rem;
-        padding-top: 1.5rem;
-    }
-
-    .about-me .content{
-        flex-direction: column;
+    } 
+    .about-me ul {
         gap: 0.5rem;
+        margin-bottom: 1rem;
     }
-    .about-me figure img {
-        max-width: 18rem;
-        margin-top: 1rem;
-    }
-    .about-me .content div {
-        width: 100%;
-        line-height: 1.3rem;
-        text-align: justify;
-    }
-    .about-me div h3 {
-        font-size: 1.1rem;
-        animation: none;
-        white-space: wrap;
-    }
-    .about-me div p {
-        font-size: 1rem;
-    }   
+    .about-me ul a {
+        padding: 0.6rem 1.3rem;
+        font-size: 0.7rem;
+    }  
 }
 
 @media screen and (min-width: 300px)  and (max-width: 399px) {
     .about-me .max-width {
-        transform: translateX(-50px); 
+        transform: translateX(-30px); 
     }
     .about-me h2 {
         font-size: 1.5rem;
@@ -159,6 +164,14 @@
     .about-me div p {
         font-size: 0.9rem;
     }   
+    .about-me ul {
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+    .about-me ul a {
+        padding: 0.6rem 1rem;
+        font-size: 0.7rem;
+    }
 }
 
 

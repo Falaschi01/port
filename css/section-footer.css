@@ -11,6 +11,11 @@
 .footer p {
     color: #fff;
 }
+@media screen and (min-width: 400px)  and (max-width: 599px) {
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
 @media screen and (min-width: 300px)  and (max-width: 399px) {
     .footer p {
         font-size: 0.6rem;

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!--Menu Hamburguer-->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
@@ -31,7 +30,7 @@
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contatos">Contatos</a></li>
+                        <li><a href="#contato">Contatos</a></li>
                     </ul>
 
                     <input type="checkbox" id="colorToggle" hidden>
@@ -41,7 +40,7 @@
                 </nav>
             </div>
         </section>
-    </header> <!--header-->
+    </header> <!--Cabeçalho-->
 
     <main>
         <section class="section-hero" id="inicio">
@@ -85,7 +84,7 @@
 
                         <p>
                             Atualmente curso Análise e Desenvolvimento de Sistemas na
-                            <a href="https://www.unipar.br/"><span class="color-red">Unipar - Universidade
+                            <a href="https://www.unipar.br/" target="_blank"><span class="color-red">Unipar - Universidade
                                     Paranaense</span></a>, onde venho ampliando meus
                             conhecimentos em programação e desenvolvimento web.
                         </p>
@@ -103,6 +102,20 @@
                             a aprender cada vez mais, contribuindo com dedicação e proatividade em cada etapa do
                             desenvolvimento.
                         </p>
+
+                        <ul>
+                            <li><a href="https://wa.me/5544997032921?text=Olá,%20quero%20falar%20com%20você!"
+                                    class="whatssap" target="_blank"><i class="fa-brands fa-whatsapp"
+                                        style="color: #ffffff; margin-right: 0.5rem; font-size: 1.1rem;"></i>WhatsApp</a>
+                            </li>
+                            <li><a href="mailto:rafaelfalaschi15@gmail.com" class="gmail" target="_blank"><i
+                                        class="fa-solid fa-envelope"
+                                        style="color: #ffffff; margin-right: 0.5rem; font-size: 1.1rem;"></i>Gmail</a>
+                            </li>
+                            <li><a href="https://github.com/Falaschi01" class="git-hub" target="_blank"><i class="fa-brands fa-github"
+                                        style="color: #ffffff; margin-right: 0.5rem; font-size: 1.1rem;"></i>GitHub</a>
+                            </li>
+                        </ul>
                     </div>
                 </section>
             </div>
@@ -147,7 +160,7 @@
                             <article>
                                 <h3>Portfólio desenvolvido para arquitetura.</h3>
                                 <p>Construi o site por completo atráves do figma pedido pelo cliente.</p>
-                                <a href="#">Saiba mais</a>
+                                <a href="#" target="_blank">Ver projeto</a>
 
                                 <ul class="language-produced">
                                     <li>
@@ -173,7 +186,7 @@
                             <article>
                                 <h3>Portfólio desenvolvido para arquitetura.</h3>
                                 <p>Construi o site por completo atráves do figma pedido pelo cliente.</p>
-                                <a href="#">Saiba mais</a>
+                                <a href="#" target="_blank">Ver projeto</a>
 
                                 <ul class="language-produced">
                                     <li>
@@ -197,8 +210,7 @@
                             <article>
                                 <h3>Portfólio desenvolvido para arquitetura.</h3>
                                 <p>Construi o site por completo atráves do figma pedido pelo cliente.</p>
-                                <a href="#">Saiba mais</a>
-
+                                <a href="#" target="_blank">Ver projeto</a>
                                 <ul class="language-produced">
                                     <li>
                                         <p>HTML5</p>
@@ -220,68 +232,31 @@
             </div>
         </section> <!--Meus projetos-->
 
-        <section class="contact" id="contatos">
+        <section class="contact" id="contato">
             <div class="max-width hidden">
-                <h2>Contatos</h2>
-
-                <section class="content-contact">
-                    <div class="side-left">
-                        <h3>Endereço;</h3>
-
-                        <address>
-                            <p>
-                                <i class="fa-solid fa-location-dot" style="color: #f95f39;"></i>
-                                <a href="">Umuarama-pr</a>
-                            </p>
-                        </address>
-
-                        <address>
-                            <p>
-                                <i class="fa-sharp fa-solid fa-phone-volume" style="color: #f95f39;"></i>
-                                <a href="">(44) 99703-2921</a>
-                            </p>
-
-                            <p>
-                                <i class="fa-solid fa-envelope" style="color: #f95f39;"></i>
-                                <a href="#">rafaelfalaschi15@gmail.com</a>
-                            </p>
-                        </address>
 
 
-                        <h4>Siga-me</h4>
-                        <ul>
-                            <li>
-                                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                            </li>
+                <h2>Entre em contato comigo</h2>
 
-                            <li>
-                                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                            </li>
+                <form onsubmit="enviarWhats(event)" id="form" class="form-content">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="text" id="nome">
 
-                            <li>
-                                <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
-                            </li>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="" id="mensagem" placeholder="Digite sua mensagem" rows="6"
+                        aria-label="Digite sua mensagem"></textarea>
 
-                            <li>
-                                <a href="#" class="git-hub"><i class="fa-brands fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="side-right">
-                        <h3>Entre em contato comigo!</h3>
-                        <a href="#">Enviar via Whatssap</a>
-                    </div>
-                </section>
-            </div>
-        </section> <!--Contato-->
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div> <!--max-width-->
+        </section>
     </main>
 
     <footer>
         <section class="footer">
             <p>Copyright © 2025 <a href="#inicio">Rafael Falaschi</a>. Todos os direitos reservados.</p>
         </section> <!--Rodapé-->
-    </footer>
+    </footer> <!--Rodape-->
 
     <script src="/scripts.js"></script>
 </body>

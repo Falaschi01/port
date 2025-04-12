@@ -12,9 +12,10 @@
 }
 .skills h2 {
     text-align: center;
-    font-size: 4rem;
-    color: rgb(40, 148, 236);
+    font-size: 2.5rem;
+    color: #fff;
     margin-top: 2rem;
+    font-family: sans-serif;
 }
 .skills .cards-skills{
     display: grid;
@@ -55,12 +56,12 @@
 .box-skills img {
     max-width: 35%;
 }
-@media screen and (min-width: 400px)  and (max-width: 500px)  {
+@media screen and (min-width: 400px)  and (max-width: 599px)  {
     .skills {
         min-height: 30vh;
     }
     .skills .max-width {
-        transform: translateX(50px);
+        transform: translateX(30px);
     }
     .skills h2 {
     font-size: 2rem;
@@ -75,7 +76,7 @@
 }
 @media screen and (min-width: 300px)  and (max-width: 399px)  {
     .skills .max-width {
-        transform: translateX(50px); 
+        transform: translateX(30px); 
     }
     .skills {
         min-height: 30vh;
