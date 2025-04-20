@@ -1,0 +1,134 @@
+@import 'assets/css/main.css';
+@import 'assets/css/ponto-turismo.css';
+@import 'assets/css/footer.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.11);
+    z-index: 10;
+}
+header .nav-bar {
+    position: relative;
+}
+header .nav-bar, ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    gap: 2rem;
+}
+.nav-bar h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.nav-bar h1:hover {
+    transform: scale(1.1);
+}
+.nav-bar span {
+    color: rgb(253, 253, 253);
+}
+.nav-bar a {
+    font-size: 1.1rem;
+    color: rgb(253, 253, 253);
+    transition: 0.5s ease-in-out;
+}
+.nav-bar a:hover {
+    color: rgb(0, 0, 0);
+}
+#close-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+@media screen and (min-width: 901px) and (max-width: 1250px) {
+    .max-width {
+        max-width: 850px;
+    }
+}   
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .max-width {
+        max-width: 650px;
+    }
+}   
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    .max-width {
+        max-width: 450px;
+    }
+    ul#menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: auto;
+        background-color: #111;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+        transition: right 0.3s ease-in-out;
+        z-index: 10;
+    }
+
+    ul#menu.active {
+        right: 0;
+    }
+
+    #close-btn {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 290px) and (max-width: 500px) {
+    .max-width {
+        max-width: 350px;
+    }
+    ul#menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: auto;
+        background-color: #111;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+        transition: right 0.3s ease-in-out;
+        z-index: 10;
+    }
+
+    ul#menu.active {
+        right: 0;
+    }
+
+    #close-btn {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+

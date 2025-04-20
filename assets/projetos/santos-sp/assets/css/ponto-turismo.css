@@ -1,0 +1,116 @@
+main .turism-porto {
+    padding-top: 3rem;
+}
+main .turism-porto h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:  #ffffffd7;
+}
+.turism-porto .ponto-turism{
+    padding-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.ponto-turism figure {
+    min-width: 60%;
+}
+.ponto-turism figure img{
+    min-width: 100%;
+}
+.ponto-turism h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+.ponto-turism p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    color:  #ffffffd7;
+}
+@media screen and (min-width: 1251px) and (max-width: 2000px){
+    main .turism-porto h2 {
+        font-size: 2rem;
+    }
+    .turism-porto .ponto-turism{
+        margin-top: 2rem;
+    }
+    .ponto-turism figure img{
+        max-width: 100%;
+        height: auto;
+    }
+    .ponto-turism h3 {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+    }
+    .ponto-turism p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1250px){
+    main .turism-porto h2 {
+        font-size: 1.5rem;
+    }
+    .turism-porto .ponto-turism{
+        margin-top: 2rem;
+    }
+    .ponto-turism figure {
+        min-width: 60%;
+    }
+    .ponto-turism figure img{
+        max-width: 100%;
+    }
+    .ponto-turism h3 {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .ponto-turism p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    main .turism-porto h2 {
+        font-size: 1.5rem;
+    }
+    .turism-porto .ponto-turism{
+        flex-direction: column;
+    }
+    .turism-porto #invert, #invert2 {
+        flex-direction: column-reverse;
+    }
+    .ponto-turism figure {
+        min-width: 100%;
+    }
+    .ponto-turism figure img{
+        max-width: 100%;
+    }
+    .ponto-turism h3 {
+        font-size: 1.5rem;
+    }
+    .ponto-turism p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 290px) and (max-width: 600px) {
+    main .turism-porto h2 {
+        font-size: 1.5rem;
+    }
+    .turism-porto .ponto-turism{
+        flex-direction: column;
+    }
+    .turism-porto #invert, #invert2 {
+        flex-direction: column-reverse;
+    }
+    .ponto-turism figure {
+        min-width: 100%;
+    }
+    .ponto-turism figure img{
+        max-width: 100%;
+    }
+    .ponto-turism h3 {
+        font-size: 1.5rem;
+    }
+    .ponto-turism p {
+        font-size: 1rem;
+    }
+}
