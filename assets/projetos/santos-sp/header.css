@@ -1,6 +1,6 @@
-@import 'assets/css/main.css';
-@import 'assets/css/ponto-turismo.css';
-@import 'assets/css/footer.css';
+@import './assets/css/main.css';
+@import './assets/css/ponto-turismo.css';
+@import './assets/css/footer.css';
 
 * {
     margin: 0;

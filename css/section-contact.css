@@ -77,9 +77,12 @@
     }
     .contact h2 {
         font-size: 1.3rem;
+        margin-top: 1rem;
+        font-family: sans-serif;
+        color: #fff;
     }
     .form-content{
-        min-width: 18rem;
+        min-width: 100%;
     }
     .form-content label {
         font-size: 1.3rem;
