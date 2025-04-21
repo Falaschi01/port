@@ -1,9 +1,9 @@
-@import 'css/section-hero.css';
-@import 'css/section-about.css';
-@import 'css/section-habilidades.css';
-@import 'css/section-projects.css';
-@import 'css/section-contact.css';
-@import 'css/section-footer.css';
+@import './css/section-hero.css';
+@import './css/section-about.css';
+@import './css/section-habilidades.css';
+@import './css/section-projects.css';
+@import './css/section-contact.css';
+@import './css/section-footer.css';
 
 * {
     margin: 0;
